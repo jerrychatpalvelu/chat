@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Demo</title>
+  <!-- Liitä style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Chat-painike -->
+  <div id="chat-button">💬</div>
+
+  <!-- Chat-ikkuna -->
+  <div id="chatbox" class="hidden">
+    <!-- Chat-header -->
+    <div id="chat-header">
+  <div id="chat-logo">
+    <img src="https://mekonomenbromma.se/wp-content/uploads/2022/03/cropped-mekonomen-bromma-icon.png" alt="Yrityksen logo" />
+    <span id="chat-title">Mekonomen Autohuolto</span>
+  </div>
+
+  <div id="chat-header-right">
+    <span id="chat-status" class="status-badge closed">Suljettu</span>
+    <div id="close-chat">✕</div>
+  </div>
+</div>
+
+    <!-- Intro-teksti -->
+    <div id="chat-intro">
+      Hei! 👋 Kysy mitä tahansa auton huoltoon liittyvää ja katso, miten nopeasti saat vastauksen.
+    </div>
+
+    <!-- Viestit -->
+    <div id="chat-messages"></div>
+
+    <!-- Input -->
+    <div id="chat-input">
+      <input type="text" placeholder="Kirjoita viesti...">
+      <button>Lähetä</button>
+    </div>
+  </div>
+
+  <!-- Liitä script.js -->
+  <script src="script.js"></script>
+
+</body>
+</html>
